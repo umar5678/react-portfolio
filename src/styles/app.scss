@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import "statics";
+@import "header";
+@import "home";
+@import "work";
+@import "timeline";
+@import "services";
+@import "testimonials";
+@import "contact";
+@import "footer";
+@import "mobileNav";
+@import "animations";
+@import "mediaquery";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $text2;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;   
+}
+
+body{
+    background-color: $color1;
+    overflow-x: hidden;
+    
+}
+
+.blur{
+    overflow: hidden;
+}
+body.blur #content > * {
+    filter: blur(4px);
+    transition: var(--transition);
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.disableBtn{
+    cursor: not-allowed !important ;
+    background-color: rgb(175, 175, 175) !important;
+}
+#customMessage{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: x-large;
+    font-weight: 700;
+}
